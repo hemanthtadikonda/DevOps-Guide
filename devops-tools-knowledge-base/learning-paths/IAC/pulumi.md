@@ -119,3 +119,70 @@ pulumi up
 * [Pulumi Examples](https://github.com/pulumi/examples)
 
 
+# 📘 Terraform Documentation
+
+## 🔎 Understanding the Flow for Troubleshooting
+
+1. **Validate Configuration**:
+   Run `terraform validate` to ensure your configuration files are syntactically correct and internally consistent.
+
+2. **Plan Execution**:
+   Use `terraform plan` to preview the changes Terraform will make. This helps identify unexpected modifications before applying them.
+
+3. **Apply Changes**:
+   Execute `terraform apply` to implement the planned changes. Monitor the output for any errors or issues during resource creation or modification.
+
+4. **State Inspection**:
+   If discrepancies arise, inspect the Terraform state using `terraform state list` and `terraform state show`. This helps verify the current state of resources.
+
+5. **Debugging**:
+   Set the `TF_LOG` environment variable to `DEBUG` for detailed logs:
+
+   ```bash
+   export TF_LOG=DEBUG
+   terraform apply
+   ```
+
+   This provides granular insight into Terraform's operations.
+
+6. **Common Issues**:
+
+    * **Provider Errors**: Ensure that the required providers are correctly specified and available.
+    * **Authentication Failures**: Verify that your credentials are correctly configured and have the necessary permissions.
+    * **Resource Conflicts**: Check for naming collisions or existing resources that may interfere with Terraform's operations.
+
+7. **Community Support**:
+   If issues persist, consult the [Terraform Community Forum](https://discuss.hashicorp.com/c/terraform-core/24) or [GitHub Issues](https://github.com/hashicorp/terraform/issues) for assistance.
+
+---
+
+## 🔎 Understanding the Flow for Troubleshooting
+
+1. **Preview Changes**:
+   Execute `pulumi preview` to see the proposed changes before applying them. This helps identify unintended modifications.
+
+2. **Apply Changes**:
+   Run `pulumi up` to apply the changes. Monitor the output for any errors during resource provisioning.
+
+3. **Stack Inspection**:
+   Use `pulumi stack` to view the current state and configuration of your stack.
+
+4. **Logging**:
+   Enable verbose logging for detailed output:
+
+   ```bash
+   pulumi up --logtostderr -v=9
+   ```
+
+   This provides in-depth information about Pulumi's operations.
+
+5. **Common Issues**:
+
+    * **Configuration Errors**: Ensure that all required configuration values are set and correctly formatted.
+    * **Dependency Failures**: Check that all dependencies are installed and compatible with your Pulumi project.
+    * **Resource Conflicts**: Verify that resource names and configurations do not conflict with existing resources.
+
+6. **Community Support**:
+   If challenges persist, seek assistance from the [Pulumi Community](https://www.pulumi.com/community/) or [GitHub Issues](https://github.com/pulumi/pulumi/issues).
+
+---

@@ -138,6 +138,35 @@ packer build aws-nginx.pkr.hcl
 
 ---
 
+## 🔎 Understanding the Flow for Troubleshooting
+
+1. **Template Validation**:
+   Use `packer validate` to check the syntax and configuration of your template files.
+
+2. **Build Execution**:
+   Run `packer build` to initiate the image creation process. Monitor the output for any errors during provisioning.
+
+3. **Debug Mode**:
+   Enable debug mode for detailed logs:
+
+   ```bash
+   packer build -debug template.json
+   ```
+
+   This allows step-by-step execution, pausing between each step for inspection.
+
+4. **Common Issues**:
+
+    * **Authentication Failures**: Ensure that your credentials for the target platform (e.g., AWS, Azure) are correctly configured.
+    * **Provisioner Errors**: Check that all scripts and commands used in provisioners execute successfully.
+    * **Resource Availability**: Verify that the required resources (e.g., base images, network configurations) are accessible and correctly specified.
+
+5. **Community Support**:
+   For persistent issues, refer to the [Packer Community Forum](https://discuss.hashicorp.com/c/packer/19) or [GitHub Issues](https://github.com/hashicorp/packer/issues) for guidance.
+
+---
+
+
 ## 🌟 Best Practices & Advanced Tips
 
 * Use **variables** for flexibility.
