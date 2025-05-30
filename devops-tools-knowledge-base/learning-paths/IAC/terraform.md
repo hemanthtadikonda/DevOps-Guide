@@ -1,13 +1,13 @@
 
-✅ **Introduction (Why use Terraform?)**
-✅ **Real-world adoption (Companies using it)**
-✅ **Terraform lifecycle**
-✅ **Syntax overview**
-✅ **Most useful commands**
-✅ **Advantages and disadvantages**
-✅ **Beginner-friendly example with explanation**
-✅ **Best practices and optional advanced features**
-✅ **Clean formatting and professional layout**
+* ✅ **Introduction (Why use Terraform?)**
+* ✅ **Real-world adoption (Companies using it)**
+* ✅ **Terraform lifecycle**
+* ✅ **Syntax overview**
+* ✅ **Most useful commands**
+* ✅ **Advantages and disadvantages**
+* ✅ **Beginner-friendly example with explanation**
+* ✅ **Best practices and optional advanced features**
+* ✅ **Clean formatting and professional layout**
 
 ---
 
