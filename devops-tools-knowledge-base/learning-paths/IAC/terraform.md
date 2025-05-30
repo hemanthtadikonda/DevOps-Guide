@@ -185,5 +185,5 @@ terraform output instance_public_ip
 
 *This documentation provides a comprehensive journey from beginner to advanced in Terraform. Happy provisioning! 🚀*
 
-```
+
 
