@@ -102,60 +102,6 @@ pulumi up
 
 ---
 
-## 🌟 Best Practices & Advanced Tips
-
-* **Stacks**: Use stacks for managing environments (dev, staging, prod).
-* **Secrets**: Use Pulumi’s secrets management for sensitive data.
-* **State Management**: Use remote backends (S3, Azure Blob) for team collaboration.
-* **Unit Testing**: Write tests using familiar testing frameworks.
-* **CI/CD Integration**: Automate with GitHub Actions, GitLab CI, Jenkins.
-
----
-
-## 📚 Resources
-
-* [Pulumi Docs](https://www.pulumi.com/docs/)
-* [Learn Pulumi](https://www.pulumi.com/docs/get-started/)
-* [Pulumi Examples](https://github.com/pulumi/examples)
-
-
-# 📘 Terraform Documentation
-
-## 🔎 Understanding the Flow for Troubleshooting
-
-1. **Validate Configuration**:
-   Run `terraform validate` to ensure your configuration files are syntactically correct and internally consistent.
-
-2. **Plan Execution**:
-   Use `terraform plan` to preview the changes Terraform will make. This helps identify unexpected modifications before applying them.
-
-3. **Apply Changes**:
-   Execute `terraform apply` to implement the planned changes. Monitor the output for any errors or issues during resource creation or modification.
-
-4. **State Inspection**:
-   If discrepancies arise, inspect the Terraform state using `terraform state list` and `terraform state show`. This helps verify the current state of resources.
-
-5. **Debugging**:
-   Set the `TF_LOG` environment variable to `DEBUG` for detailed logs:
-
-   ```bash
-   export TF_LOG=DEBUG
-   terraform apply
-   ```
-
-   This provides granular insight into Terraform's operations.
-
-6. **Common Issues**:
-
-    * **Provider Errors**: Ensure that the required providers are correctly specified and available.
-    * **Authentication Failures**: Verify that your credentials are correctly configured and have the necessary permissions.
-    * **Resource Conflicts**: Check for naming collisions or existing resources that may interfere with Terraform's operations.
-
-7. **Community Support**:
-   If issues persist, consult the [Terraform Community Forum](https://discuss.hashicorp.com/c/terraform-core/24) or [GitHub Issues](https://github.com/hashicorp/terraform/issues) for assistance.
-
----
-
 ## 🔎 Understanding the Flow for Troubleshooting
 
 1. **Preview Changes**:
@@ -178,11 +124,29 @@ pulumi up
 
 5. **Common Issues**:
 
-    * **Configuration Errors**: Ensure that all required configuration values are set and correctly formatted.
-    * **Dependency Failures**: Check that all dependencies are installed and compatible with your Pulumi project.
-    * **Resource Conflicts**: Verify that resource names and configurations do not conflict with existing resources.
+   * **Configuration Errors**: Ensure that all required configuration values are set and correctly formatted.
+   * **Dependency Failures**: Check that all dependencies are installed and compatible with your Pulumi project.
+   * **Resource Conflicts**: Verify that resource names and configurations do not conflict with existing resources.
 
 6. **Community Support**:
    If challenges persist, seek assistance from the [Pulumi Community](https://www.pulumi.com/community/) or [GitHub Issues](https://github.com/pulumi/pulumi/issues).
 
 ---
+
+
+## 🌟 Best Practices & Advanced Tips
+
+* **Stacks**: Use stacks for managing environments (dev, staging, prod).
+* **Secrets**: Use Pulumi’s secrets management for sensitive data.
+* **State Management**: Use remote backends (S3, Azure Blob) for team collaboration.
+* **Unit Testing**: Write tests using familiar testing frameworks.
+* **CI/CD Integration**: Automate with GitHub Actions, GitLab CI, Jenkins.
+
+---
+
+## 📚 Resources
+
+* [Pulumi Docs](https://www.pulumi.com/docs/)
+* [Learn Pulumi](https://www.pulumi.com/docs/get-started/)
+* [Pulumi Examples](https://github.com/pulumi/examples)
+
