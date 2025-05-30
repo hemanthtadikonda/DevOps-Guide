@@ -1,13 +1,3 @@
-Got it! You’re aiming for a **well-structured, beginner-to-advanced Terraform documentation** under:
-
-```
-learning-paths/
-|-- IAC/
-    |-- Terraform/
-        |-- terraform.md
-```
-
-I’ll draft a **comprehensive `terraform.md`** file with:
 
 ✅ **Introduction (Why use Terraform?)**
 ✅ **Real-world adoption (Companies using it)**
