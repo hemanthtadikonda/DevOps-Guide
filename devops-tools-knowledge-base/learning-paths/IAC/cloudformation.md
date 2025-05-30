@@ -129,12 +129,12 @@ aws cloudformation delete-stack --stack-name my-s3-stack
 
 ## 🔎 Understanding the Flow for Troubleshooting
 
-🔸 **Template Preparation**: Errors in template syntax (YAML/JSON) can cause validation failures.
-🔸 **IAM Permissions**: Missing roles/policies can block resource creation.
-🔸 **Resource Dependencies**: Resources in the stack are created based on dependencies.
-🔸 **Event Logs**: Use `list-stack-events` to pinpoint failures.
-🔸 **Rollback on Failure**: CloudFormation automatically rolls back on errors unless disabled.
-🔸 **Drift Detection**: Compare actual resources with template definitions.
+* **Template Preparation**: Errors in template syntax (YAML/JSON) can cause validation failures.
+* **IAM Permissions**: Missing roles/policies can block resource creation.
+* **Resource Dependencies**: Resources in the stack are created based on dependencies.
+* **Event Logs**: Use `list-stack-events` to pinpoint failures.
+* **Rollback on Failure**: CloudFormation automatically rolls back on errors unless disabled.
+* **Drift Detection**: Compare actual resources with template definitions.
 
 ---
 
