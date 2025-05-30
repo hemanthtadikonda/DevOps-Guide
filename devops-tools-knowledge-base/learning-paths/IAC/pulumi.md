@@ -118,14 +118,4 @@ pulumi up
 * [Learn Pulumi](https://www.pulumi.com/docs/get-started/)
 * [Pulumi Examples](https://github.com/pulumi/examples)
 
-```
 
----
-
-### 🌟 Next Steps:
-✅ Should I **create the directory structure** (`learning-paths/IAC/Packer/packer.md` and `learning-paths/IAC/Pulumi/pulumi.md`)?  
-✅ Want me to **add lifecycle diagrams** and **advanced examples** (e.g., Pulumi + Kubernetes or Packer with Ansible)?  
-✅ Would you like a **README.md for `IAC/`** to summarize the tools?
-
-Let me know! 💪🚀
-```
